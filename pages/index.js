@@ -26,6 +26,7 @@ const white = "rgb(210, 210, 210)";
 
 export default function Home() {
   const [toggle, setToggle] = useState(true);
+
   const strobeAnim = useSpring({
     config: {
       tension: 250,
@@ -36,7 +37,10 @@ export default function Home() {
     color: toggle ? globalWhite : globalBlack,
   });
 
-  // useEffect(() => void setInterval(() => strobe(), 1000), []);
+  useEffect(
+    () => setTimeout(() => void setInterval(() => strobe(), 1000), 5000),
+    []
+  );
 
   const strobe = () => {
     setTimeout(() => {
@@ -49,8 +53,8 @@ export default function Home() {
 
   return (
     <PageContainer style={strobeAnim}>
-      <XOXOPanel text={"X0"} side={"left"} />
-      <XOXOPanel text={"X0"} side={"right"} />
+      <XOXOPanel text={"X0"} side={"left"} toggle={toggle} />
+      <XOXOPanel text={"X0"} side={"right"} toggle={toggle} />
       <LinksPanel>
         <Link
           text={"Lístky"}
@@ -66,7 +70,7 @@ export default function Home() {
         />
       </LinksPanel>
       <LogoLetisteSvg />
-      <Letiste toggle={toggle} />
+      <Letiste toggle={toggle} text={"LETIŠTĚ"} />
       <SocialPanel />
     </PageContainer>
   );

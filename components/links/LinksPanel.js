@@ -14,6 +14,6 @@ const Panel = styled.div`
   /* border: 1px dotted white; */
 `;
 
-export const LinksPanel = ({ children }) => {
-  return <Panel>{children}</Panel>;
+export const LinksPanel = ({ children, onMouseEnter }) => {
+  return <Panel onMouseEnter={onMouseEnter && onMouseEnter}>{children}</Panel>;
 };

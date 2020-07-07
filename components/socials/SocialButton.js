@@ -8,7 +8,8 @@ const Button = styled.a`
   justify-content: center;
   align-items: center;
 
-  padding: 0.7rem;
+  padding-top: 0.7rem;
+  padding-right: 0.7rem;
 
   border-radius: 0.9rem;
   /* border: 1px dashed pink; */

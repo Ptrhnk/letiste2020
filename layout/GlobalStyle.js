@@ -6,7 +6,7 @@ export const GlobalStyle = createGlobalStyle`
   }
   body {
     font-family: 'Roboto', sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: .8px;
     box-sizing: border-box;
     font-size: 62.5%;

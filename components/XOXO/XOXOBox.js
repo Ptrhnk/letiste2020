@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-import { globalBlue } from "constants/index";
+import { globalBlue, globalWhite } from "constants/index";
 
 const Box = styled.div`
   margin: 0 10rem;
@@ -9,7 +9,7 @@ const Box = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  color: ${globalBlue};
+  color: ${globalWhite};
   /* border: 1px dotted pink; */
 `;
 
