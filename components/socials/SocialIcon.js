@@ -1,13 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
-import facebookIcon from "../img/social_icons/facebook3.png";
-import twitterIcon from "../img/social_icons/twitter.png";
-import instagramIcon from "../img/social_icons/instagram.png";
+import facebookIcon from "img/socials/facebook3.png";
+import twitterIcon from "img/socials/twitter.png";
+import instagramIcon from "img/socials/instagram.png";
 
 const Image = styled.img`
-  width: 1.6rem;
-  height: 1.6rem;
+  width: 2.4rem;
+  height: 2.4rem;
 
   @media (max-width: 700px) {
     width: 1.3rem;

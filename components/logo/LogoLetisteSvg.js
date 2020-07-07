@@ -6,10 +6,10 @@ import LogoLine from "./LogoLine";
 
 const Container = styled.div`
   position: absolute;
-  top: 45%;
+  top: 46%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 70%;
+  height: 80%;
   /* width: 80%; */
   display: flex;
   justify-content: center;
@@ -26,8 +26,7 @@ const Container = styled.div`
 const StyledSvg = styled.svg`
   margin: 0;
   height: 100%;
-  /* width: 90%; */
-  z-index: 10000;
+  z-index: 100;
   /* border: 0.5px dashed lightgrey; */
 `;
 
@@ -55,7 +54,7 @@ const LogoLetiste = () => {
     { x1: point1.x, y1: point1.y, x2: point4.x, y2: point4.y },
     { x1: point3.x, y1: point3.y, x2: point5.x, y2: point5.y },
     { x1: point1.x, y1: point1.y, x2: point5.x, y2: point5.y },
-    { x1: point2.x, y1: point2.y, x2: point5.x, y2: point5.y }
+    { x1: point2.x, y1: point2.y, x2: point5.x, y2: point5.y },
   ];
 
   useEffect(() => void setInterval(() => flash(), 200), []);

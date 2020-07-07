@@ -28,7 +28,7 @@ const SocialPanel = () => {
   return (
     <Socials>
       <SocialButton social={"facebook"} />
-      {/* <SocialButton social={"instagram"} /> */}
+      <SocialButton social={"instagram"} />
       {/* <SocialButton social={"twitter"} /> */}
     </Socials>
   );

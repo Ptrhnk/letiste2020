@@ -1,8 +1,8 @@
 import { ServerStyleSheet } from "styled-components";
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
-import Meta from "../layout/meta";
-import { GlobalStyle } from "../layout/GlobalStyle";
+import Meta from "layout/meta";
+import { GlobalStyle } from "layout/GlobalStyle";
 
 export default class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -51,7 +51,6 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <title>Letiště XOXO</title>
           {/* <script
             async
             src="https://www.googletagmanager.com/gtag/js?id=UA-143351878-1"

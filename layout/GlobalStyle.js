@@ -5,24 +5,27 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     letter-spacing: .8px;
     box-sizing: border-box;
+    font-size: 62.5%;
+    background-color: black;
   }
   *, *::after, *::before {
       margin: 0;
       padding: 0;
-      box-sizing: inherit;
+      /* box-sizing: inherit; */
+      box-sizing: border-box;
   }
   .ReactModal__Overlay {
     opacity: 0;
     transition: opacity 200ms ease-in-out;
   }
-  .ReactModal__Overlay--after-open{
+  .ReactModal__Overlay--after-open {
       opacity: 1;
   }
-  .ReactModal__Overlay--before-close{
+  .ReactModal__Overlay--before-close {
       opacity: 0;
   }
 `;

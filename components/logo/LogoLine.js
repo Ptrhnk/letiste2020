@@ -8,8 +8,8 @@ const Line = styled(animated.line)`
   stroke-linejoin: round;
   stroke-width: 1px;
   stroke-linecap: round;
-  /* stroke-dasharray: 0 8; */
   stroke-dashoffset: 32;
+  /* stroke-dasharray: 0 8; */
 `;
 
 const colours = ["rgba(0, 180, 255, 1)", "rgba(255, 80, 180, 1)"];
@@ -41,24 +41,20 @@ const LogoLine = ({ x1, y1, x2, y2, blick }) => {
     config: {
       tension: blick ? 200 : 60,
       friction: blick ? 24 : 100,
-      mass: blick ? 2 : 1
+      mass: blick ? 2 : 1,
     },
-    opacity: blick ? .9 : 0,
-    // stroke: blick ? `rgba(255, 80, 180, 1)` : `rgba(255, 0, 220, 0.2)`,
-    // stroke: blick ? `rgba(0, 230, 255, 1)` : `rgba(0, 100, 255, 0.4)`,
+    opacity: blick ? 0.9 : 0,
     stroke: blick ? `hsl(196, 95%, 80%)` : `rgba(0, 100, 255, 0.4)`,
-    // stroke: blick ? `hsl(${hue}, 100%, 50%)` : `hsl(${hue - 10}, 0%, 0%)`,
     strokeWidth: blick ? `${width}px` : `${0}px`,
     strokeDashoffset: offset,
-    strokeDasharray: `0 ${space}`
-    // stroke: `rgba(255, ${blick ? 255 : 20}, 255, ${blick ? 0.8 : 0.1})`
+    strokeDasharray: `0 ${space}`,
   });
   const pointMovement = useSpring({
     config: { tension: 200, friction: 1, mass: 1 },
     x1: x1,
     y1: y1,
     x2: x2,
-    y2: y2
+    y2: y2,
   });
 
   return (

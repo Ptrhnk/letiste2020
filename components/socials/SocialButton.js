@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 import SocialIcon from "./SocialIcon";
-import { globalBlack } from "../constants";
 
 const Button = styled.a`
   display: flex;
@@ -10,14 +9,13 @@ const Button = styled.a`
   align-items: center;
 
   padding: 0.7rem;
-  margin-top: 0.8rem;
-  background-color: black;
+
   border-radius: 0.9rem;
+  /* border: 1px dashed pink; */
 
   transition: all 0.3s ease;
 
   :hover {
-    background-color: ${globalBlack};
   }
 
   @media (max-width: 700px) {
@@ -30,13 +28,11 @@ const SocialButton = ({ social }) => {
   const getHref = () => {
     switch (social) {
       case "facebook":
-        return "https://www.facebook.com/events/829025523963205/";
-      case "twitter":
-        return "https://www.twitter.com/letistefest/";
+        return "https://www.facebook.com/letistedisaster/";
       case "instagram":
         return "https://www.instagram.com/letistekarneval/";
-      case "calendar":
-        return "";
+      case "twitter":
+        return "https://www.twitter.com/letistefest/";
     }
   };
 
