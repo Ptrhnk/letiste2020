@@ -15,6 +15,10 @@ const Nadpis = styled(animated.div)`
   display: flex;
   color: ${globalWhite};
   font-weight: 700;
+
+  @media (max-height: 500px) {
+    height: 70%;
+  }
 `;
 
 const Letter = styled(animated.h1)`
@@ -29,13 +33,8 @@ const Letter = styled(animated.h1)`
   letter-spacing: 0;
   align-items: ${({ odd }) => (odd ? "flex-end" : "flex-start")};
   border-radius: ${({ odd }) => (odd ? "0 0 20rem 20rem" : " 20rem 20rem 0 0")};
-  /* border: 1px solid black; */
-  /* color: ${globalBlack}; */
   color: ${globalBlack};
-  /* background-image: ${({ odd }) =>
-    odd
-      ? `linear-gradient(to top, ${globalBlack}, ${globalWhite})`
-      : `linear-gradient(to bottom, ${globalBlack}, ${globalWhite})`}; */
+  /* border: 1px solid black; */
 `;
 
 export const Letiste = ({ toggle, text }) => {

@@ -39,7 +39,7 @@ export default function Home() {
     color: toggle ? globalWhite : globalBlack,
   });
 
-  // useEffect(() => void setInterval(() => strobe(), 1500), []);
+  useEffect(() => void setInterval(() => strobe(), 2000), []);
 
   const strobe = () => {
     setTimeout(() => {

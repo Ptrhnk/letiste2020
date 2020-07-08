@@ -14,6 +14,13 @@ const Anchor = styled(animated.a)`
   text-decoration: none;
   /* border: 1px dotted white; */
   font-weight: 400;
+
+  @media (max-height: 500px) {
+    font-size: 1.4rem;
+  }
+  @media (max-width: 700px) {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Link = ({ link, text, onMouseEnter }) => {

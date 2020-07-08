@@ -19,8 +19,11 @@ const Socials = styled.div`
   z-index: 10000;
 
   @media (max-width: 700px) {
-    left: 0;
+    /* left: 0; */
     flex-direction: row;
+  }
+  @media (max-height: 500px) {
+    /* flex-direction: column; */
   }
 `;
 

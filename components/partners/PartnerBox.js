@@ -7,19 +7,15 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
-  margin-right: -6rem;
-
-  /* border: 1px dotted blue; */
+  flex-grow: 0;
+  margin: 1rem 0;
 
   z-index: 1000;
 `;
 
 const ImageBox = styled.div`
-  width: 12rem;
+  width: 8rem;
   height: 3rem;
-
-  /* border: 1px dotted pink; */
 
   background-image: ${({ image }) => (image ? `url(${image})` : "none")};
   background-size: contain;
@@ -27,8 +23,11 @@ const ImageBox = styled.div`
   background-repeat: no-repeat;
 
   @media (max-width: 900px) {
-    width: 9rem;
-    height: 8rem;
+    width: 3rem;
+    height: 1.4rem;
+    margin: 0 0 0 1rem;
+  }
+  @media (max-width: 700px) {
   }
 `;
 

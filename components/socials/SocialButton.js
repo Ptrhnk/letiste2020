@@ -20,8 +20,8 @@ const Button = styled.a`
   }
 
   @media (max-width: 700px) {
-    margin-right: 0.6rem;
-    padding: 0.6rem;
+    padding-bottom: 0.9rem;
+    padding-right: 0.9rem;
   }
 `;
 
@@ -31,7 +31,7 @@ const SocialButton = ({ social }) => {
       case "facebook":
         return "https://www.facebook.com/letistedisaster/";
       case "instagram":
-        return "https://www.instagram.com/letistekarneval/";
+        return "https://www.instagram.com/letistex0x0/";
       case "twitter":
         return "https://www.twitter.com/letistefest/";
     }

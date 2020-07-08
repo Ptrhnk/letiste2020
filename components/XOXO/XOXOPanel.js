@@ -13,6 +13,11 @@ const Panel = styled(animated.div)`
   align-items: center;
   flex-direction: column;
   z-index: 10000;
+
+  @media (max-width: 1000px) {
+    top: 30%;
+    bottom: 30%;
+  }
   /* border: 1px dotted white; */
 `;
 

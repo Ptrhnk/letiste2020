@@ -9,7 +9,7 @@ const Container = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 75%;
+  height: 72%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -17,8 +17,7 @@ const Container = styled.div`
   /* border: 0.5px dashed grey; */
 
   @media (max-width: 700px) {
-    height: 20%;
-    top: 40%;
+    height: 70%;
   }
 `;
 

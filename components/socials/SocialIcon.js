@@ -13,6 +13,10 @@ const Image = styled.img`
     width: 1.3rem;
     height: 1.3rem;
   }
+  @media (max-height: 500px) {
+    width: 1.3rem;
+    height: 1.3rem;
+  }
 `;
 
 const SocialIcon = ({ social }) => {
