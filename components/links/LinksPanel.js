@@ -7,7 +7,7 @@ const Panel = styled.div`
   /* justify-content: center; */
   /* align-items: center; */
   /* line-height: 3rem; */
-  top: 8%;
+  top: 12%;
   left: 50%;
   transform: translate(-50%, 0);
   z-index: 10000;

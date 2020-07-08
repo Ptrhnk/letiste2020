@@ -6,11 +6,10 @@ import LogoLine from "./LogoLine";
 
 const Container = styled.div`
   position: absolute;
-  top: 46%;
+  top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 80%;
-  /* width: 80%; */
+  height: 75%;
   display: flex;
   justify-content: center;
   align-items: center;

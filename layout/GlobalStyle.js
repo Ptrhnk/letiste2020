@@ -5,9 +5,10 @@ export const GlobalStyle = createGlobalStyle`
     scroll-behavior: smooth;
   }
   body {
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-family: 'Open Sans Condensed', sans-serif;
     font-weight: 600;
-    letter-spacing: .8px;
+    letter-spacing: 1px;
     box-sizing: border-box;
     font-size: 62.5%;
     background-color: black;

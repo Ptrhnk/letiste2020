@@ -5,15 +5,15 @@ import SocialButton from "./SocialButton";
 
 const Socials = styled.div`
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row-reverse;
   align-self: flex-end;
   justify-self: flex-end;
-  margin-left: 0.8rem;
+  /* margin-left: 0.8rem; */
   animation-fill-mode: backwards;
   animation-delay: 7.6s;
   z-index: 10000;

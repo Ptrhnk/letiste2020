@@ -6,8 +6,8 @@ import twitterIcon from "img/socials/twitter.png";
 import instagramIcon from "img/socials/instagram.png";
 
 const Image = styled.img`
-  width: 2.4rem;
-  height: 2.4rem;
+  width: 2.3rem;
+  height: 2.3rem;
 
   @media (max-width: 700px) {
     width: 1.3rem;

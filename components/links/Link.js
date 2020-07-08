@@ -7,8 +7,8 @@ import { globalBlue, globalWhite } from "constants/index";
 const Anchor = styled(animated.a)`
   font-size: 2rem;
   color: ${globalBlue};
-  margin: 0 1rem;
-  letter-spacing: 2px;
+  margin: 0 1.3rem;
+  letter-spacing: 4px;
   text-transform: uppercase;
   border-bottom: 4px solid ${globalBlue};
   text-decoration: none;
@@ -16,7 +16,7 @@ const Anchor = styled(animated.a)`
   font-weight: 400;
 `;
 
-export const Link = ({ link, text }) => {
+export const Link = ({ link, text, onMouseEnter }) => {
   const [hovered, setHovered] = useState(false);
   const hoverAnim = useSpring({
     config: {
@@ -33,7 +33,10 @@ export const Link = ({ link, text }) => {
   return (
     <Anchor
       href={link}
-      onMouseEnter={() => setHovered(true)}
+      onMouseEnter={() => {
+        setHovered(true);
+        onMouseEnter;
+      }}
       onMouseLeave={() => setHovered(false)}
       target="_blank"
       style={hoverAnim}

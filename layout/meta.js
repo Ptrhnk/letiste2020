@@ -49,8 +49,12 @@ Hlavním pódiem bude letos boutique kino Přítomnost a střecha domu Radost na
     <meta property="og:locale" content="cs_CZ" />
 
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300;700&display=swap"
+      rel="stylesheet"
+    ></link>
   </>
 );

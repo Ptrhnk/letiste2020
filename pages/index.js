@@ -9,6 +9,8 @@ import { Link } from "components/links/Link";
 import { Letiste } from "components/letiste/Letiste";
 import { globalWhite, globalBlack } from "constants/index";
 import { XOXOPanel } from "components/XOXO/XOXOPanel";
+import PartnersContainer from "components/partners/PartnersContainer";
+import partners from "components/partners/partners";
 
 const PageContainer = styled(animated.div)`
   position: fixed;
@@ -33,22 +35,19 @@ export default function Home() {
       friction: 20,
       mass: 1,
     },
-    backgroundColor: toggle ? globalBlack : globalWhite,
+    backgroundColor: toggle ? globalBlack : white,
     color: toggle ? globalWhite : globalBlack,
   });
 
-  useEffect(
-    () => setTimeout(() => void setInterval(() => strobe(), 1000), 5000),
-    []
-  );
+  // useEffect(() => void setInterval(() => strobe(), 1500), []);
 
   const strobe = () => {
     setTimeout(() => {
       setToggle(false);
       setTimeout(() => {
         setToggle(true);
-      }, Math.floor(Math.random() * 150 + 50));
-    }, Math.floor(Math.random() * 4000 + 100));
+      }, Math.floor(Math.random() * 100 + 50));
+    }, Math.floor(Math.random() * 10000 + 100));
   };
 
   return (
@@ -57,14 +56,17 @@ export default function Home() {
       <XOXOPanel text={"X0"} side={"right"} toggle={toggle} />
       <LinksPanel>
         <Link
+          onMouseEnter={strobe}
           text={"Lístky"}
           link={"https://goout.net/cs/festivaly/letiste-x0x0/jmwsf/+offoq/"}
         />
         <Link
+          onMouseEnter={strobe}
           text={"Událost"}
           link={"https://www.facebook.com/events/283634622785037/"}
         />
         <Link
+          onMouseEnter={strobe}
           text={"Afterparty"}
           link={"https://www.facebook.com/events/621557531796933/"}
         />
@@ -72,6 +74,7 @@ export default function Home() {
       <LogoLetisteSvg />
       <Letiste toggle={toggle} text={"LETIŠTĚ"} />
       <SocialPanel />
+      <PartnersContainer partners={partners} />
     </PageContainer>
   );
 }
