@@ -6,7 +6,6 @@ import { globalWhite, globalBlack } from "constants/index";
 
 const Nadpis = styled(animated.div)`
   position: absolute;
-  letter-spacing: 3rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -17,7 +16,7 @@ const Nadpis = styled(animated.div)`
   font-weight: 700;
 
   @media (max-height: 500px) {
-    height: 70%;
+    height: 68%;
   }
 `;
 
@@ -35,6 +34,9 @@ const Letter = styled(animated.h1)`
   border-radius: ${({ odd }) => (odd ? "0 0 20rem 20rem" : " 20rem 20rem 0 0")};
   color: ${globalBlack};
   /* border: 1px solid black; */
+  @media (max-width: 700px) {
+    font-size: 3.4rem;
+  }
 `;
 
 export const Letiste = ({ toggle, text }) => {

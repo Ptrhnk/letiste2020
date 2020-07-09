@@ -16,8 +16,12 @@ const Container = styled.div`
   overflow: auto;
   /* border: 0.5px dashed grey; */
 
+  @media (max-height: 500px) {
+    height: 80%;
+  }
   @media (max-width: 700px) {
-    height: 70%;
+    width: 52%;
+    max-height: 46%;
   }
 `;
 

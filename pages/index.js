@@ -21,10 +21,17 @@ const PageContainer = styled(animated.div)`
   background-color: ${globalBlack};
   color: ${globalWhite};
   z-index: 10000;
+
+  @media (max-height: 500px) {
+    position: absolute;
+  }
+  @media (max-width: 700px) {
+    position: absolute;
+  }
 `;
 
-const black = "rgb(0,0,0)";
-const white = "rgb(210, 210, 210)";
+// const black = "rgb(0,0,0)";
+// const white = "rgb(210, 210, 210)";
 
 export default function Home() {
   const [toggle, setToggle] = useState(true);
@@ -35,7 +42,7 @@ export default function Home() {
       friction: 20,
       mass: 1,
     },
-    backgroundColor: toggle ? globalBlack : white,
+    backgroundColor: toggle ? globalBlack : "white",
     color: toggle ? globalWhite : globalBlack,
   });
 
