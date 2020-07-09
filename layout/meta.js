@@ -3,7 +3,7 @@ export default () => (
     <meta itemProp="name" content="Letiště X0X0" />
     <meta
       itemProp="image"
-      content="http://scontent.fprg1-1.fna.fbcdn.net/v/t1.0-9/37154007_2141339806123605_7164382736835149824_n.jpg"
+      content="http://letiste.airforceproduction.cz/og_image_square.png"
     />
     <meta charSet="utf-8" className="next-head" />
     <meta
@@ -27,7 +27,7 @@ export default () => (
       property="og:url"
       content="https://www.facebook.com/events/283634622785037"
     />
-    <meta property="og:type" content="Festival" />
+    <meta property="og:type" content="website" />
     <meta property="og:title" content="Letiště X0X0 " />
     <meta
       property="og:description"
@@ -36,14 +36,10 @@ Hlavním pódiem bude letos boutique kino Přítomnost a střecha domu Radost na
     />
     <meta
       property="og:image"
-      content="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/29598321_2074334959490757_5775938141910961006_n.png"
+      content="http://letiste.airforceproduction.cz/og_image_square.png"
     />
     <meta property="og:image:alt" content="Logo" />
     <meta property="og:image:type" content="image/png" />
-    <meta
-      property="og:image:secure_url"
-      content="https://scontent-frt3-1.xx.fbcdn.net/v/t1.0-9/29598321_2074334959490757_5775938141910961006_n.png"
-    />
     <meta property="og:image:width" content="300" />
     <meta property="og:image:height" content="200" />
     <meta property="og:locale" content="cs_CZ" />

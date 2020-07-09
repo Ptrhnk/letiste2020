@@ -17,11 +17,11 @@ const Anchor = styled(animated.a)`
 
   @media (max-height: 500px) {
     font-size: 1.4rem;
-    margin: 0 1rem;
+    margin: 0 0.7rem;
   }
   @media (max-width: 700px) {
     font-size: 1.4rem;
-    margin: 0 1rem;
+    margin: 0 0.7rem;
   }
 `;
 
